@@ -1,0 +1,8 @@
+meta:
+  environment: node
+  toolchain:
+    name: browser
+    version: 15.2.9
+build:
+  artifacts:
+    dist/uk-support/*: /
