@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "uk-support": {
+    "drones-of-ukraine": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/uk-support",
+            "outputPath": "dist/drones-of-ukraine",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "uk-support:build:production"
+              "browserTarget": "drones-of-ukraine:build:production"
             },
             "development": {
-              "browserTarget": "uk-support:build:development"
+              "browserTarget": "drones-of-ukraine:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "uk-support:build"
+            "browserTarget": "drones-of-ukraine:build"
           }
         },
         "test": {
