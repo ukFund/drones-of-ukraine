@@ -1,0 +1,241 @@
+.home {
+  &__logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+    // font-family: "DynaPuff", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("../../../assets/logo.png");
+    background-size: cover;
+    background-position: center;
+    font-size: 100px;
+    flex-direction: column;
+    // padding-top: 15vh;
+  }
+
+  &__donat-button {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #fdc500;
+    border: none;
+    color: #000000;
+    margin-bottom: 50px;
+    text-decoration: none;
+  }
+
+  &__body-wrapper {
+    padding: 0 100px;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  &__support-section-heading {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  &__support-section {
+    display: flex;
+    flex-direction: column;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+
+  &__support-section-left {
+    padding-right: 10px;
+  }
+
+  &__support-section-right {
+    padding-left: 10px;
+  }
+
+  &__images-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+  }
+
+  &__images-trident {
+    background-image: url("../../../assets/trident.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 60px;
+  }
+
+  &__images-trident-second {
+    opacity: 0.5;
+    height: 80px;
+  }
+
+  &__images-trident-third {
+    opacity: 0.2;
+    height: 60px;
+  }
+
+  &__card-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__card-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  &__card-desc-heading {
+    font-family: "DynaPuff", sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  &__card-desc-info {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__card {
+    height: 300px;
+    width: 300px;
+    background-image: url("../../../assets/image-stub.jpg");
+    background-size: cover;
+    border-radius: 40px;
+  }
+
+  &__satoshi {
+    display: flex;
+    padding-bottom: 40px;
+  }
+
+  &__bitcoin {
+    display: flex;
+  }
+
+  &__faq-heading {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #fdc500;
+    font-family: "DynaPuff", sans-serif;
+    text-align: left;
+  }
+
+  &__faq-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__faq-section-margin {
+    margin-bottom: 40px;
+  }
+
+  &__faq-section-element {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  &__faq-section-element-left {
+    margin-right: 50px;
+  }
+
+  &__faq-section-element-right {
+    margin-left: 50px;
+  }
+
+  &__faq-section-element-heading {
+    color: #fdc500;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  &__faq-section-element-desc {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  &__info {
+    padding-top: 40px;
+  }
+
+  &__info-title {
+    font-family: "DynaPuff", sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__email-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__email {
+    width: 360px;
+    background-color: #0063d4;
+    padding: 5px;
+    // border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+  }
+
+  &__email-text {
+    color: #000000;
+    padding-left: 10px;
+  }
+
+  &__email-button {
+    width: 120px;
+    padding: 15px;
+    background-color: #000000;
+    border: none;
+    color: #ffd500;
+    // border-radius: 10px;
+  }
+
+  &__telegram-button {
+    background-color: #0088cc;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    color: #ffffff;
+    // border-radius: 10px;
+    width: 360px;
+  }
+
+  &__telegram-button i {
+    display: inline-block;
+    height: 18px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 2px;
+    background: url("../../../assets/icons8-telegram-30.png") no-repeat;
+    background-size: contain;
+  }
+}
+
+.footer {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #fdc500;
+}
