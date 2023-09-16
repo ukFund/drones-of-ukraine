@@ -8,18 +8,25 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { NgImageSliderModule } from 'ng-image-slider';
-import { DonateComponent } from './components/donate/donate.component';
+import { DonatePageComponent } from './components/donate-page/donate-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, DonateComponent, AboutUsComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    NgImageSliderModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
+    declarations: [AppComponent, HomePageComponent, DonatePageComponent, AboutUsComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        NgImageSliderModule,
+        BrowserAnimationsModule,
+        MatTooltipModule,
+        MatExpansionModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+}

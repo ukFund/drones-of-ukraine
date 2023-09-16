@@ -5,6 +5,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
     templateUrl: './home-page.component.html',
     styleUrls: ['./home-page.component.scss'],
     encapsulation: ViewEncapsulation.None,
+    host: {
+        class: 'page'
+    },
 })
 export class HomePageComponent {
     public telegramBotLink: string = 'https://telegramm-invite-channel-2kyegj25ap.data-relay.org';

@@ -1,5 +1,5 @@
 <div class="app__header-wrapper" [class.app__header-wrapper--upper]="isUpper">
-    <div class="app__header" [class.app__header--upper]="isUpper">
+    <div class="app__header width-scale" [class.app__header--upper]="isUpper">
         <a href="/home" class="app__logo-link">
             <img
                     src="../assets/header-logo.png"
@@ -9,6 +9,7 @@
             />
         </a>
 
+        <a href="/home">Главная</a>
         <a href="/about-us">О нас</a>
         <a href="/">Отчеты</a>
         <a href="/">Связь с нами</a>
@@ -27,7 +28,7 @@
 <router-outlet (activate)="onActivate($event)"></router-outlet>
 
 <div class="app__footer-wrapper">
-    <div class="app__footer">
+    <div class="app__footer width-scale">
         <div class="app__footer-info">
             <div class="app__footer-info-item">© 2023 Drones Of Ukraine</div>
             <div class="app__footer-info-item">ул. Большая Житомирская, 2а, Киев 01001 Украина</div>
@@ -35,10 +36,19 @@
         </div>
 
         <div class="app__footer-nav">
+            <a href="/home">Главная</a>
             <a href="/about-us">О нас</a>
             <a href="/">Отчеты</a>
             <a href="/">Связь с нами</a>
             <a href="/donate">Инструкция по переводу</a>
         </div>
     </div>
+</div>
+
+<div *ngIf="hasCryptoNote$ | async" class="app__note">
+    Адрес скопирован
+</div>
+
+<div *ngIf="hasCardNote$ | async" class="app__note">
+    Номер карты скопирован
 </div>

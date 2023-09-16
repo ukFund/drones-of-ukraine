@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.scss'],
   host: {
-    class: 'about-us',
+    class: 'page about-us',
   },
 })
 export class AboutUsComponent {}
