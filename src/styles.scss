@@ -1,12 +1,33 @@
-@import "~normalize.css";
+@import "bootstrap/dist/css/bootstrap-grid.min.css";
+@import "bootstrap/dist/css/bootstrap-utilities.min.css";
+@import "normalize.css";
 
 html,
 body {
   height: 100%;
-  background-color: #003f88;
-  color: #ffffff;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --primary-color: #fdc500;
+  --secondary-color: #003f88;
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --red-color: #a71f23;
+
+  --telegram-color: #0088cc;
+  --telegram-color-lighter: #19a1e6;
+
+  --header-color: #00489b;
+  --header-height: 60px;
+  --header-height-upper: 100px;
 }
