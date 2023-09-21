@@ -1,0 +1,29 @@
+.about-us {
+  &__body-wrapper {
+    padding: 130px 100px 0 100px;
+    margin: 0 auto;
+  }
+
+  &__body-container {
+    display: grid;
+    gap: 40px;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+  }
+
+  &__image {
+    width: inherit;
+  }
+
+  &__text-wrapper {
+    padding: 50px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+  }
+}

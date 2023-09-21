@@ -9,13 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { NgImageSliderModule } from 'ng-image-slider';
 import { DonatePageComponent } from './components/donate-page/donate-page.component';
-import { AboutUsComponent } from './components/about-us/about-us.component';
+import { AboutUsPageComponent } from './components/about-us-page/about-us-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ReportsPageComponent } from './components/reports-page/reports-page.component';
 
 @NgModule({
-    declarations: [AppComponent, HomePageComponent, DonatePageComponent, AboutUsComponent],
+    declarations: [AppComponent, HomePageComponent, DonatePageComponent, AboutUsPageComponent, ReportsPageComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,

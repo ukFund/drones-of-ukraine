@@ -2,6 +2,7 @@ import { Component, HostListener, OnDestroy, OnInit, ViewEncapsulation } from '@
 import { NoteService } from './services/note.service';
 import { Observable } from 'rxjs/internal/Observable';
 import { delay, Subscription, tap } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
     selector: "app-root",
@@ -23,10 +24,13 @@ export class AppComponent implements OnInit, OnDestroy {
 
     public isUpper: boolean = true;
 
+    private _isScrollToBottom: boolean = false;
+
     private _cryptoSub: Subscription = Subscription.EMPTY;
     private _cardSub: Subscription = Subscription.EMPTY;
 
     public constructor(
+        private _router: Router,
         private _noteService: NoteService
     ) {
     }
@@ -56,11 +60,39 @@ export class AppComponent implements OnInit, OnDestroy {
     }
 
     public onActivate($event: any): void {
+        if (this._isScrollToBottom) {
+            window.scroll({
+                top: document.body.scrollHeight,
+                left: 0,
+                behavior: 'smooth'
+            });
+
+            this._isScrollToBottom = false;
+            return;
+        }
+
         window.scroll({
             top: 0,
             left: 0,
             behavior: 'smooth'
         })
+    }
+
+    public scrollToBottom(): void {
+        this._isScrollToBottom = true;
+
+        if (this._router.url !== '/home') {
+            this._router.navigate(['/homme']);
+            return;
+        }
+
+        window.scroll({
+            top: document.body.scrollHeight,
+            left: 0,
+            behavior: 'smooth'
+        });
+
+        this._isScrollToBottom = false;
     }
 
     public ngOnDestroy(): void {

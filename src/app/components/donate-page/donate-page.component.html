@@ -1,150 +1,8 @@
 <div class="donate__body-wrapper width-scale">
     <div class="container donate__body-container">
         <div class="row">
-            <div class="donate__body-container-item">
-                <div class="row">
-                    <div class="col-auto text-center">
-                        <div class="float-end">
-                            <img src="../../../assets/fist.jpeg" alt="fist" class="donate__fist-image">
-                            <div class="fw-bold">crypto</div>
-                        </div>
-                    </div>
-
-                    <div class="col-8">
-                        <div class="donate__address-wrap">
-                            <div>
-                                <div class="donate__token-type">USDT (TRC20)</div>
-                                <div class="donate__address">
-                                    <div class="donate__address-code">{{usdtTrc20}}</div>
-                                    <img
-                                            src="../../../assets/copy-svgrepo-com.svg"
-                                            alt="copy"
-                                            class="donate__copy-icon"
-                                            matTooltip="Скопировать"
-                                            (click)="copyToClipboard(usdtTrc20)"
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="donate__token-type">USDT (ERC20)</div>
-                                <div class="donate__address">
-                                    <div class="donate__address-code">{{usdtErc20}}</div>
-                                    <img
-                                            src="../../../assets/copy-svgrepo-com.svg"
-                                            alt="copy"
-                                            class="donate__copy-icon"
-                                            matTooltip="Скопировать"
-                                            (click)="copyToClipboard(usdtErc20)"
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="donate__token-type">BUSD (BEP20)</div>
-                                <div class="donate__address">
-                                    <div class="donate__address-code">{{busdBep20}}</div>
-                                    <img
-                                            src="../../../assets/copy-svgrepo-com.svg"
-                                            alt="copy"
-                                            class="donate__copy-icon"
-                                            matTooltip="Скопировать"
-                                            (click)="copyToClipboard(busdBep20)"
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="donate__token-type">BTC (BTC)</div>
-                                <div class="donate__address">
-                                    <div class="donate__address-code">{{btcBtc}}</div>
-                                    <img
-                                            src="../../../assets/copy-svgrepo-com.svg"
-                                            alt="copy"
-                                            class="donate__copy-icon"
-                                            matTooltip="Скопировать"
-                                            (click)="copyToClipboard(btcBtc)"
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="donate__token-type">ETH (ERC20)</div>
-                                <div class="donate__address">
-                                    <div class="donate__address-code">{{ethErc20}}</div>
-                                    <img
-                                            src="../../../assets/copy-svgrepo-com.svg"
-                                            alt="copy"
-                                            class="donate__copy-icon"
-                                            matTooltip="Скопировать"
-                                            (click)="copyToClipboard(ethErc20)"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="donate__body-container-item donate__instructions">
-                <div>1. Выберите криптовалюту, которую хотите отправить</div>
-
-                <div>
-                    2. Откройте кошелек или биржу и скопируйте адрес в соответствии с
-                    выбранной криптовалютой
-                </div>
-                <div>
-                    3. После получения адреса укажите его в соответствующем поле и введите
-                    сумму для перевода
-                </div>
-
-                <div>4. И последнее: подтвердите вывод</div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="donate__body-container-item">
-                <div class="row">
-                    <div class="col-auto text-center">
-                        <div class="float-end">
-                            <img src="../../../assets/credit-card.jpg" alt="fist" class="donate__fist-image">
-                            <div class="fw-bold">card</div>
-                        </div>
-                    </div>
-
-                    <div class="col-8">
-                        <div class="donate__address-wrap">
-                            <div>
-                                <div class="donate__token-type">Номер карты</div>
-                                <div class="donate__address">
-                                    <div class="donate__address-code">{{cardNumber}}</div>
-                                    <img
-                                            src="../../../assets/copy-svgrepo-com.svg"
-                                            alt="copy"
-                                            class="donate__copy-icon"
-                                            matTooltip="Скопировать номер карты"
-                                            (click)="copyToClipboard(cardNumber, true)"
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="donate__token-type">Получатель</div>
-                                <div class="donate__address">
-                                    <div class="donate__address-code">Имя Фамилия</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
             <div class="donate__terms-of-use">
-                <mat-expansion-panel>
+                <mat-expansion-panel class="donate__expansion-panel">
                     <mat-expansion-panel-header>
                         <mat-panel-title class="fw-bold">
                             Пользовательское соглашение
@@ -163,6 +21,120 @@
                     ТИНЬКОФФ.
                     Введенная информация не будет
                     предоставлена третьим лицам. Собранные пожетвования пойдут на помощь ВСУ.
+                </mat-expansion-panel>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="donate__body-container-item">
+                <div class="row">
+                    <div class="col-auto text-center">
+                        <div class="float-end">
+                            <img src="../../../assets/fist.jpeg" alt="fist" class="donate__fist-image">
+                            <div class="fw-bold">crypto</div>
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <div class="donate__address-wrap">
+                            <div>
+                                <div class="donate__token-type">USDT (TRC20)</div>
+                                <div class="donate__address">
+                                    <div class="donate__address-code">{{usdtTrc20}}</div>
+                                    <img
+                                            src="../../../assets/copy-icon.svg"
+                                            alt="copy"
+                                            class="donate__copy-icon"
+                                            matTooltip="Скопировать"
+                                            (click)="copyToClipboard(usdtTrc20)"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="donate__token-type">USDT (ERC20)</div>
+                                <div class="donate__address">
+                                    <div class="donate__address-code">{{usdtErc20}}</div>
+                                    <img
+                                            src="../../../assets/copy-icon.svg"
+                                            alt="copy"
+                                            class="donate__copy-icon"
+                                            matTooltip="Скопировать"
+                                            (click)="copyToClipboard(usdtErc20)"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="donate__token-type">BUSD (BEP20)</div>
+                                <div class="donate__address">
+                                    <div class="donate__address-code">{{busdBep20}}</div>
+                                    <img
+                                            src="../../../assets/copy-icon.svg"
+                                            alt="copy"
+                                            class="donate__copy-icon"
+                                            matTooltip="Скопировать"
+                                            (click)="copyToClipboard(busdBep20)"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="donate__token-type">BTC (BTC)</div>
+                                <div class="donate__address">
+                                    <div class="donate__address-code">{{btcBtc}}</div>
+                                    <img
+                                            src="../../../assets/copy-icon.svg"
+                                            alt="copy"
+                                            class="donate__copy-icon"
+                                            matTooltip="Скопировать"
+                                            (click)="copyToClipboard(btcBtc)"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="donate__token-type">ETH (ERC20)</div>
+                                <div class="donate__address">
+                                    <div class="donate__address-code">{{ethErc20}}</div>
+                                    <img
+                                            src="../../../assets/copy-icon.svg"
+                                            alt="copy"
+                                            class="donate__copy-icon"
+                                            matTooltip="Скопировать"
+                                            (click)="copyToClipboard(ethErc20)"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="donate__terms-of-use">
+                <mat-expansion-panel class="donate__expansion-panel">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="fw-bold">
+                            Инструкция
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <div class="donate__instructions">
+                        <div>1. Выберите криптовалюту, которую хотите отправить</div>
+
+                        <div>
+                            2. Откройте кошелек или биржу и скопируйте адрес в соответствии с
+                            выбранной криптовалютой
+                        </div>
+                        <div>
+                            3. После получения адреса укажите его в соответствующем поле и введите
+                            сумму для перевода
+                        </div>
+
+                        <div>4. И последнее: подтвердите вывод</div>
+                    </div>
                 </mat-expansion-panel>
             </div>
         </div>

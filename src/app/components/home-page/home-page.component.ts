@@ -10,7 +10,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     },
 })
 export class HomePageComponent {
-    public telegramBotLink: string = 'https://telegramm-invite-channel-2kyegj25ap.data-relay.org';
+    public telegramBotLink: string = 'https://telegramm-invite-channel-gj035nt4k9.data-relay.org';
 
     public imageObject: Object[] = [
         {

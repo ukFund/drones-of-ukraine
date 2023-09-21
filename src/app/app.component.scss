@@ -35,7 +35,7 @@
       min-height: var(--header-height-upper);
     }
 
-    a {
+    a, div {
       box-shadow: inset 0 0 0 0 var(--primary-color);
       color: var(--white-color);
       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -45,7 +45,12 @@
       &:hover {
         color: var(--black-color);
         box-shadow: inset 200px 0 0 0 var(--primary-color);
+        cursor: pointer;
       }
+    }
+
+    &--active-link {
+      color: pink !important;
     }
   }
 
@@ -119,7 +124,7 @@
     flex-direction: column;
     text-align: right;
 
-    a {
+    div, a {
       text-decoration: none;
       color: var(--black-color);
       box-shadow: inset 0 0 0 0 var(--black-color);
@@ -129,6 +134,7 @@
       &:hover {
         color: var(--primary-color);
         box-shadow: inset 200px 0 0 0 var(--black-color);
+        cursor: pointer;
       }
     }
   }

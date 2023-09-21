@@ -44,6 +44,10 @@
     color: var(--primary-color)
   }
 
+  &__support-section-heading-first {
+    margin-top: 0.83em
+  }
+
   &__support-section {
     font-size: 20px;
     line-height: 1.5rem;
@@ -151,7 +155,7 @@
     align-self: center;
 
     button:disabled,
-    button[disabled]{
+    button[disabled] {
       background-color: #cccccc;
       color: #666666;
       cursor: not-allowed;
@@ -201,13 +205,13 @@
     width: 19px;
     vertical-align: middle;
     margin-right: 5px;
-    background: url("../../../assets/icons8-telegram-30.png") no-repeat;
+    background: url("../../../assets/telegram-icon.png") no-repeat;
     background-size: contain;
   }
-}
 
-.text-accent {
-  color: var(--primary-color)
+  &__telegram-button-text {
+    vertical-align: middle
+  }
 }
 
 .text-block {
